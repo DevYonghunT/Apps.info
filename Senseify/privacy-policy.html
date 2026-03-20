@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senseify - 개인정보처리방침 / Privacy Policy</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: #f8f9fa;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 40px 24px;
+        }
+        h1 {
+            font-size: 28px;
+            color: #1a1a2e;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 40px;
+        }
+        .lang-toggle {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 32px;
+        }
+        .lang-toggle button {
+            padding: 8px 20px;
+            border: 2px solid #4A90D9;
+            border-radius: 20px;
+            background: white;
+            color: #4A90D9;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .lang-toggle button.active {
+            background: #4A90D9;
+            color: white;
+        }
+        .section { margin-bottom: 28px; }
+        h2 {
+            font-size: 18px;
+            color: #1a1a2e;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #4A90D9;
+        }
+        p { margin-bottom: 12px; font-size: 15px; }
+        ul { padding-left: 20px; margin-bottom: 12px; }
+        li { margin-bottom: 6px; font-size: 15px; }
+        .highlight {
+            background: #e8f4fd;
+            padding: 16px;
+            border-radius: 8px;
+            border-left: 4px solid #4A90D9;
+        }
+        .contact {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            margin-top: 24px;
+        }
+        .hidden { display: none; }
+        footer {
+            text-align: center;
+            color: #999;
+            font-size: 13px;
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Senseify</h1>
+        <p class="subtitle">개인정보처리방침 / Privacy Policy</p>
+
+        <div class="lang-toggle">
+            <button id="btn-ko" class="active" onclick="showLang('ko')">한국어</button>
+            <button id="btn-en" onclick="showLang('en')">English</button>
+        </div>
+
+        <!-- 한국어 -->
+        <div id="lang-ko">
+            <div class="section highlight">
+                <p><strong>Senseify는 사용자의 개인정보를 수집하지 않습니다.</strong></p>
+                <p>모든 센서 데이터는 기기 내에서만 처리되며, 외부 서버로 전송되지 않습니다.</p>
+            </div>
+
+            <div class="section">
+                <h2>1. 수집하는 개인정보</h2>
+                <p>Senseify는 어떠한 개인정보도 수집, 저장, 전송하지 않습니다.</p>
+            </div>
+
+            <div class="section">
+                <h2>2. 센서 데이터 처리</h2>
+                <p>앱에서 사용하는 센서 데이터(가속도, 자이로스코프, 자기장, 기압, 소리, GPS, 조도)는:</p>
+                <ul>
+                    <li>기기 내에서만 실시간 처리됩니다</li>
+                    <li>외부 서버로 전송되지 않습니다</li>
+                    <li>앱 종료 시 자동으로 삭제됩니다</li>
+                    <li>CSV 내보내기는 사용자의 명시적 조작에 의해서만 수행됩니다</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>3. 위치 정보</h2>
+                <p>GPS 센서 기능 사용 시 위치 정보에 접근하지만, 이 데이터는 기기 내에서만 처리되며 어디에도 저장되거나 전송되지 않습니다.</p>
+            </div>
+
+            <div class="section">
+                <h2>4. 마이크 접근</h2>
+                <p>소리 측정 기능 사용 시 마이크에 접근하지만, 음성은 녹음되지 않으며 소리 크기(dB)와 주파수 분석에만 사용됩니다.</p>
+            </div>
+
+            <div class="section">
+                <h2>5. 제3자 서비스</h2>
+                <p>Senseify는 광고, 분석 도구, 제3자 SDK를 사용하지 않습니다.</p>
+            </div>
+
+            <div class="section">
+                <h2>6. 아동 개인정보 보호</h2>
+                <p>Senseify는 교육용 앱으로, 개인정보를 수집하지 않으므로 모든 연령의 사용자가 안전하게 사용할 수 있습니다.</p>
+            </div>
+
+            <div class="section">
+                <h2>7. 변경 사항</h2>
+                <p>본 개인정보처리방침이 변경될 경우 이 페이지를 통해 공지합니다.</p>
+                <p>시행일: 2026년 3월 20일</p>
+            </div>
+
+            <div class="contact">
+                <h2>문의</h2>
+                <p>개인정보 관련 문의: <a href="mailto:devyongt@gmail.com">devyongt@gmail.com</a></p>
+            </div>
+        </div>
+
+        <!-- English -->
+        <div id="lang-en" class="hidden">
+            <div class="section highlight">
+                <p><strong>Senseify does not collect any personal information.</strong></p>
+                <p>All sensor data is processed locally on your device and is never transmitted to external servers.</p>
+            </div>
+
+            <div class="section">
+                <h2>1. Information We Collect</h2>
+                <p>Senseify does not collect, store, or transmit any personal information.</p>
+            </div>
+
+            <div class="section">
+                <h2>2. Sensor Data Processing</h2>
+                <p>Sensor data used by the app (accelerometer, gyroscope, magnetometer, barometer, microphone, GPS, light) is:</p>
+                <ul>
+                    <li>Processed only on your device in real-time</li>
+                    <li>Never transmitted to external servers</li>
+                    <li>Automatically deleted when the app is closed</li>
+                    <li>CSV export is performed only by explicit user action</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>3. Location Data</h2>
+                <p>The GPS feature accesses location data, but this data is processed only on the device and is not stored or transmitted anywhere.</p>
+            </div>
+
+            <div class="section">
+                <h2>4. Microphone Access</h2>
+                <p>The sound measurement feature accesses the microphone, but audio is not recorded. It is used only for sound level (dB) and frequency analysis.</p>
+            </div>
+
+            <div class="section">
+                <h2>5. Third-Party Services</h2>
+                <p>Senseify does not use any advertisements, analytics tools, or third-party SDKs.</p>
+            </div>
+
+            <div class="section">
+                <h2>6. Children's Privacy</h2>
+                <p>Senseify is an educational app that does not collect personal information, making it safe for users of all ages.</p>
+            </div>
+
+            <div class="section">
+                <h2>7. Changes</h2>
+                <p>Any changes to this privacy policy will be posted on this page.</p>
+                <p>Effective date: March 20, 2026</p>
+            </div>
+
+            <div class="contact">
+                <h2>Contact</h2>
+                <p>Privacy inquiries: <a href="mailto:devyongt@gmail.com">devyongt@gmail.com</a></p>
+            </div>
+        </div>
+
+        <footer>
+            &copy; 2026 Senseify. All rights reserved.
+        </footer>
+    </div>
+
+    <script>
+        function showLang(lang) {
+            document.getElementById('lang-ko').classList.toggle('hidden', lang !== 'ko');
+            document.getElementById('lang-en').classList.toggle('hidden', lang !== 'en');
+            document.getElementById('btn-ko').classList.toggle('active', lang === 'ko');
+            document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+        }
+    </script>
+</body>
+</html>

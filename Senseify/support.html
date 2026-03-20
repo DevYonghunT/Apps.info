@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senseify - 지원 / Support</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+        }
+        .header {
+            text-align: center;
+            padding: 60px 24px 40px;
+            color: white;
+        }
+        .header h1 {
+            font-size: 36px;
+            margin-bottom: 8px;
+        }
+        .header p {
+            font-size: 18px;
+            opacity: 0.8;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 24px 40px;
+        }
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+        .card h2 {
+            font-size: 20px;
+            color: #1a1a2e;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .card h2 .icon {
+            font-size: 28px;
+        }
+        .card p { margin-bottom: 12px; font-size: 15px; }
+        .card ul { padding-left: 20px; }
+        .card li { margin-bottom: 8px; font-size: 15px; }
+        .sensor-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 12px;
+            margin-top: 16px;
+        }
+        .sensor-item {
+            background: #f0f4ff;
+            padding: 14px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .sensor-item .emoji { font-size: 24px; display: block; margin-bottom: 6px; }
+        .contact-btn {
+            display: inline-block;
+            background: #4A90D9;
+            color: white;
+            padding: 12px 28px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        .contact-btn:hover { background: #357ABD; }
+        .faq-item {
+            border-bottom: 1px solid #eee;
+            padding: 16px 0;
+        }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-item strong {
+            display: block;
+            color: #1a1a2e;
+            margin-bottom: 6px;
+            font-size: 15px;
+        }
+        .faq-item p {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+        footer {
+            text-align: center;
+            color: rgba(255,255,255,0.5);
+            font-size: 13px;
+            padding: 32px 24px;
+        }
+        footer a { color: rgba(255,255,255,0.7); }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Senseify</h1>
+        <p>물리 실험 센서 앱 지원 페이지</p>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <h2><span class="icon">📱</span> 앱 소개</h2>
+            <p>Senseify는 스마트폰에 내장된 센서를 활용하여 물리량을 실시간으로 측정하는 교육용 앱입니다. 고등학교 물리 수업과 과학 탐구 활동에 최적화되어 있습니다.</p>
+            <div class="sensor-grid">
+                <div class="sensor-item"><span class="emoji">📐</span>가속도계</div>
+                <div class="sensor-item"><span class="emoji">🔄</span>자이로스코프</div>
+                <div class="sensor-item"><span class="emoji">🧲</span>자기장</div>
+                <div class="sensor-item"><span class="emoji">🌡️</span>기압계</div>
+                <div class="sensor-item"><span class="emoji">🎤</span>마이크</div>
+                <div class="sensor-item"><span class="emoji">📍</span>GPS</div>
+                <div class="sensor-item"><span class="emoji">💡</span>조도</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2><span class="icon">❓</span> 자주 묻는 질문</h2>
+            <div class="faq-item">
+                <strong>Q. 어떤 기기에서 사용할 수 있나요?</strong>
+                <p>iOS 17.0 이상의 iPhone과 iPad에서 사용할 수 있습니다.</p>
+            </div>
+            <div class="faq-item">
+                <strong>Q. 센서가 작동하지 않아요.</strong>
+                <p>설정 > Senseify에서 센서 권한(모션, 마이크, 위치)이 허용되어 있는지 확인해 주세요.</p>
+            </div>
+            <div class="faq-item">
+                <strong>Q. 데이터를 내보내려면 어떻게 하나요?</strong>
+                <p>센서 화면에서 녹화 버튼을 눌러 데이터를 기록한 후, 내보내기 버튼을 누르면 CSV 파일로 저장할 수 있습니다.</p>
+            </div>
+            <div class="faq-item">
+                <strong>Q. 개인정보가 수집되나요?</strong>
+                <p>아니요. 모든 데이터는 기기 내에서만 처리되며, 외부로 전송되지 않습니다.</p>
+            </div>
+            <div class="faq-item">
+                <strong>Q. 조도 센서가 정확하지 않아요.</strong>
+                <p>조도 센서는 화면 밝기를 기반으로 상대적인 값을 측정합니다. 정확한 측정을 위해 자동 밝기를 켜주세요.</p>
+            </div>
+        </div>
+
+        <div class="card" style="text-align: center;">
+            <h2><span class="icon">📧</span> 문의하기</h2>
+            <p>버그 신고, 기능 제안, 기타 문의사항이 있으시면 이메일로 연락해 주세요.</p>
+            <br>
+            <a href="mailto:devyongt@gmail.com" class="contact-btn">devyongt@gmail.com</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Senseify. All rights reserved.</p>
+        <p><a href="privacy-policy.html">개인정보처리방침</a></p>
+    </footer>
+</body>
+</html>
